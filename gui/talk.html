@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morse Code App</title>
+
+    <script src="https://kit.fontawesome.com/190c47870f.js" 
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/body.css">
+
+    <link
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <script src="./linkers/talk.js"></script>
+
+</head>
+<body>
+  <div class="instructions container">
+    <div class="row">
+      <div class="col-sm-1">
+        <a href="menu.html"><i id="menu" tabindex=0 class="fas fa-arrow-circle-left go-back"></i></a>
+      </div>
+      <div id="instructions" class="col-sm-10 span-instruction">
+        <span class="header-span">MODO NAVEGACION ACTIVADO.</span> 
+        Presion el botón 1 para cambiar de modo, 2 moverte con el TAB al siguiente elemento,y 4 para 
+        usar el ENTER
+      </div>
+    </div>
+  </div>
+  <div class="border-gradient border-gradient-talk"></div>
+
+  <div id="email-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card" id="first-row-card" style="display:table-cell;">
+            <table class="table table-striped table-bordered alphabet">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">A</th>
+                  <td>·  −  </td>
+                  <td>B</td>
+                  <td>−  ·  ·  ·  </td>
+                  <td>C</th>
+                  <td> −  ·  −  ·   </td>
+                  <td>D</td>
+                  <td>−  ·  ·  </td>
+                </tr>
+                <tr>
+                  <th scope="row">E</th>
+                  <td>·  </td>
+                  <td>F</td>
+                  <td>·  ·  −  ·  </td>
+                  <td>G</th>
+                  <td> −  −  ·  </td>
+                  <td>H</td>
+                  <td>·  ·  ·  ·  </td>
+                </tr>
+                <tr>
+                  <th scope="row">I</th>
+                  <td>·  ·  </td>
+                  <td>J</td>
+                  <td>·  −  −  −  </td>
+                  <td>K</th>
+                  <td> −  ·  −  </td>
+                  <td>L</td>
+                  <td>·  −  ·  ·  </td>
+                </tr>
+                <tr>
+                  <th scope="row">M</th>
+                  <td>−  −  </td>
+                  <td>N</td>
+                  <td>−  ·  </td>
+                  <td>O</th>
+                  <td> −  −  −  </td>
+                  <td>P</td>
+                  <td>·  −  −  ·  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Q</th>
+                  <td>−  −  ·  −  </td>
+                  <td>R</td>
+                  <td>·  −  ·  </td>
+                  <td>S</th>
+                  <td> ·  ·  ·   </td>
+                  <td>T</td>
+                  <td>−  </td>
+                </tr>
+                <tr>
+                  <th scope="row">U</th>
+                  <td> ·  ·  −  </td>
+                  <td>V</td>
+                  <td>·  ·  ·  −  </td>
+                  <td>W</th>
+                  <td> ·  −  −  </td>
+                  <td>X</td>
+                  <td>−  ·  ·  −  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Y</th>
+                  <td>−  ·  −  −  </td>
+                  <td>Z</td>
+                  <td>−  −  ·  ·  </td>
+                  <td></th>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="col-sm-6 code-editor-container">
+          <form>
+            <div class="form-group">
+              <textarea class="form-control" id="textAreaTalk" rows="25"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6"  style="margin-top: -260px;">
+          <div class="card" id="second-row-card" style="display:table-cell;">
+            <table class="table table-striped table-bordered alphabet">
+              <thead>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>. - - - - </td>
+                  <td>2</td>
+                  <td>. . - - -</td>
+                  <td>3</th>
+                  <td>. . . - -</td>
+                  <td>4</td>
+                  <td>. . . . -</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>. . . . .</td>
+                  <td>6</td>
+                  <td>- . . . .</td>
+                  <td>7</th>
+                  <td>- - . . .</td>
+                  <td>8</td>
+                  <td>- - - . .</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>- - - - .</td>
+                  <td>.</td>
+                  <td>· − · − · − </td>
+                  <td>,</th>
+                  <td>− − · · − − </td>
+                  <td>?</td>
+                  <td>· · − − · ·  </td>
+                </tr>
+                <tr>
+                  <th scope="row">!</th>
+                  <td>− · − · − − </td>
+                  <td>(</td>
+                  <td>− · − − · </td>
+                  <td>)</th>
+                  <td>− · − − · − </td>
+                  <td>:</td>
+                  <td>− − − · · · </td>
+                </tr>
+                <tr>
+                  <th scope="row">"</th>
+                  <td>· − · · − · </td>
+                  <td>$</td>
+                  <td>· · · − · · − </td>
+                  <td>@</th>
+                  <td>· − − · − · </td>
+                  <td>-</td>
+                  <td>− · · · · − </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<script src="assets/js/eventKeys.js" type="text/javascript"></script>
+<script>
+  window.$ = window.jQuery = require('jquery');
+  
+  $("#first-row-card").width($("#second-row-card").width())
+</script>

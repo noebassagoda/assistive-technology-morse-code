@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Morse Code App</title>
+
+    <script src="https://kit.fontawesome.com/190c47870f.js" 
+      crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/body.css">
+
+    <link
+      rel="stylesheet" 
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+  <div class="instructions container">
+    <div class="row">
+      <div class="col-sm-2">
+        <a href="menu.html"><i id="menu" tabindex=0 class="fas fa-arrow-circle-left go-back"></i></a>
+      </div>
+      <div class="col-sm-10 span-instruction">
+        <span class="header-span">MODO NAVEGACION ACTIVADO.</span> 
+          Presion el botón izquierdo para usar el TAB y el derecho para 
+          usar el ENTER
+      </div>
+    </div>
+  </div>
+  <div class="border-gradient border-gradient-talk"></div>
+  
+  <!-- Alphabet  -->
+  <ul id="row-one-alphabet"></ul>
+  <ul id="row-two-alphabet"></ul>
+   <ul id="row-three-alphabet"></ul>
+  <ul id="row-four-alphabet"></ul>
+  <!-- Alphabet end-->
+
+  <!-- Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <h1>
+      <span>F</span>
+      <span>E</span>
+      <span>L</span>
+      <span>I</span>
+      <span>C</span>
+      <span>I</span>
+      <span>T</span>
+      <span>A</span>
+      <span>C</span>
+      <span>I</span>
+      <span>O</span>
+      <span>N</span>
+      <span>E</span>
+      <span>S</span>
+    </h1>
+    <h1 class="second">
+      <span class="second">Presiona cualquier boton para volver al menu</span>
+    </h1>
+    <a id="go-back" tabindex="-1" href="menu.html" class="hidden"></a>
+
+  </div> 
+  <!-- Modal end -->
+
+  <!-- Emojis -->
+  <div id="emoji-section">
+    <div class="emoji-like hidden">
+    </div>
+    <div class="emoji-like hidden">
+    </div>
+    <div class="emoji-love hidden">
+    </div>
+    <div class="emoji-love hidden">
+    </div>
+    <div class="emoji-laugh hidden">
+    </div>
+    <div class="emoji-laugh hidden">
+    </div>
+    <div class="emoji-yay hidden">
+    </div>
+    <div class="emoji-yay hidden">
+    </div>
+    <div class="emoji-wow hidden">
+    </div>
+    <div class="emoji-wow hidden">
+    </div>
+  </div>
+  <!-- Emojis end -->
+</body>
+</html>
+
+<script src="assets/js/eventKeys.js" type="text/javascript"></script>
+<script src="assets/js/game.js" type="text/javascript"></script>

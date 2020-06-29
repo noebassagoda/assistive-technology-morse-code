@@ -1,0 +1,341 @@
+.table {
+  margin-bottom: 0 !important;
+  background: linear-gradient(
+    270deg, 
+    #246655,
+    #e3d681, 
+    #a7cd97, 
+    #5e7f9c, 
+    #645e9c, 
+    #c524a7
+  );
+  background-size: 1200% 1200%;
+
+  -webkit-animation: AnimationName 29s ease infinite;
+  -moz-animation: AnimationName 29s ease infinite;
+  animation: AnimationName 29s ease infinite;
+}
+
+.border-gradient {
+  height: 4px;
+
+  background: linear-gradient(
+    270deg, 
+    #246655, 
+    #e3d681, 
+    #a7cd97, 
+    #5e7f9c, 
+    #645e9c, 
+    #c524a7
+  );
+  background-size: 1200% 1200%;
+
+  -webkit-animation: AnimationName 29s ease infinite;
+  -moz-animation: AnimationName 29s ease infinite;
+  animation: AnimationName 29s ease infinite;
+}
+
+.alert-div {
+  margin-bottom: 175px;
+}
+
+.alert {
+  border-radius: 0px !important;
+  text-align: center;
+}
+
+.alert-success {
+  background-color: #eceadb;
+}
+
+.number-input input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.number-input button {
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 0;
+  position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+  text-align: center;
+}
+
+.number-input.number-input {
+  border: 1px solid #ced4da;
+  width: 10rem;
+  border-radius: .25rem;
+}
+
+.number-input.number-input button {
+  width: 2.6rem;
+  height: .7rem;
+}
+
+.number-input.number-input button.minus {
+  padding-left: 10px;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+  width: .7rem;
+  background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+  max-width: 4rem;
+  padding: .5rem;
+  border: 1px solid #ced4da;
+  border-width: 0 1px;
+  font-size: 1rem;
+  height: 2rem;
+  color: #495057;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+
+    .number-input.def-number-input.safari_only button:before,
+    .number-input.def-number-input.safari_only button:after {
+    margin-top: -.3rem;
+    }
+  }
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.border-gradient-talk {
+  margin-bottom: 99px !important;
+}
+
+.border-gradient-setup {
+  margin-bottom: 120px !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #15284e !important;
+  border-color: #0f1923 !important;
+  box-shadow: 0 0 0 0.2rem rgba(4, 55, 110, 0.479);
+}
+
+.btn-primary:focus {
+  outline: none !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 15px #ffffff !important;
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+li:focus, i:focus, a:focus { 
+  outline: none;
+}
+
+a {
+  color: #fff !important;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+ul li {
+  position: relative;
+  list-style: none;
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+ul li::before, ul li::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  border-radius: 50%;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 1s;
+  z-index: -1;
+}
+
+ul li::after {
+  filter: blur(40px);
+}
+
+ul li:focus::before,
+ul li:focus::after,
+ul li:hover::before,
+ul li:hover::after {
+  opacity: 1;
+}
+
+ul li a {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 172px;
+  color: #fff;
+  background: #000;
+  font-size: 72px;
+  border-radius: 50%;
+}
+
+ul li a .fas, ul li a img{
+  text-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: 0.5s;
+  transform: rotateY(0deg) scale(0.8);
+  opacity: 0.2;
+}
+ul li a img{
+  opacity: 0.3;
+  height: 83px;
+}
+
+ul li:focus a .fas,
+ul li:focus a img,
+ul li:hover a .fas,
+ul li:hover a img,
+.go-back:focus {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+ul li:nth-child(1) a,
+ul li:nth-child(1)::before,
+ul li:nth-child(1)::after{
+  background: linear-gradient(45deg, #ff0057, #e64a19);
+}
+
+ul li:nth-child(2) a,
+ul li:nth-child(2)::before,
+ul li:nth-child(2)::after{
+  background: linear-gradient(45deg, #89ff00, #00bcd4);
+}
+
+ul li:nth-child(3) a,
+ul li:nth-child(3)::before,
+ul li:nth-child(3)::after{
+  background: linear-gradient(45deg, #e91e63, #5d02ff);
+}
+
+ul li:nth-child(4) a,
+ul li:nth-child(4)::before,
+ul li:nth-child(4)::after{
+  background: linear-gradient(45deg, #ff0000, #ffc107);
+}
+
+.alphabet td, .alphabet th {
+  font-weight: 900;
+}
+
+.form-control {
+  background-color: #263238 !important;
+  border-color: white !important;
+  border-width: 3px !important;
+  color: white !important;
+}
+
+.form-control:focus {
+  outline: none !important;
+  border-color: #ffffff !important;
+  box-shadow: 0 0 15px #ffffff !important;
+}
+
+#plus:focus,
+#minus:focus {
+  outline: none !important;
+}
+
+#plus:focus::before,
+#plus:focus::after,
+#minus:focus::before,
+#minus:focus::after {
+  background-color: #ffffff !important;
+  box-shadow: 0 0 15px #ffffff !important;
+}
+
+.information {
+  font-size: 20px !important;
+  box-shadow: 0 0 15px #ffffff !important;
+  border-radius: 15px;
+  opacity: 1 !important;
+  transform: scale(1.2);
+}
+
+.go-back:focus {
+  box-shadow: 0 0 15px #ffffff !important;
+  border-radius: 15px;
+}
+
+body {
+	overflow: hidden;
+}
+
+.instructions-hidden {
+  display: none;
+}
+
+.col-sm-6 .second-row {
+  margin-top: -15px;
+}

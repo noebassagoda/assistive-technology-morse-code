@@ -1,0 +1,77 @@
+/* GENERAL STYLES */
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../assets/img/canvas4.jpg);
+}
+
+.hide {
+  display: none;
+}
+
+.header-span {
+  background: linear-gradient(
+    270deg,
+    #246655, 
+    #e3d681, 
+    #a7cd97, 
+    #5e7f9c,
+    #9c94e4,
+    #df2352
+  );  
+  background-size: 1200% 1200%;
+
+  color: #000;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  -webkit-animation: AnimationName 29s ease infinite;
+  -moz-animation: AnimationName 29s ease infinite;
+  animation: AnimationName 29s ease infinite;
+}
+
+.instructions.container {
+  margin: 0px;
+  max-width: none;
+  font-size: 16px;
+  color: #FFFEFC;
+  background: #222 !important;
+  line-height: 2.0;
+  padding: 10px;
+}
+
+.go-back {
+  opacity: 0.5;
+  font-size: 22px;
+  margin-left: 20px;
+}
+
+li:focus, i:focus, a:focus { 
+  outline: none;
+}
+
+
+.span-instruction {
+  padding-left: 76px !important;
+}
+
+.go-back:focus {
+  opacity: 1 !important;
+  transform: scale(1.2) !important;
+  box-shadow: 0 0 15px #ffffff !important;
+  border-radius: 15px;
+}
+
+body {
+	overflow: hidden;
+}
+
+.hidden-alert {
+  visibility: hidden;
+}

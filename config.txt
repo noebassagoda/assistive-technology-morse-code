@@ -1,0 +1,3 @@
+SENDER_EMAIL=noebassagoda@gmail.com
+SENDER_EMAIL_PASSWORD=soloyo01234
+MORSE_SPEED=0.50
