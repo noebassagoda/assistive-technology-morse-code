@@ -4,4 +4,3 @@ playsound
 pynput
 pyusb
 gTTS
-python-dotenv
