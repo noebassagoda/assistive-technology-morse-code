@@ -4,3 +4,4 @@ pynput
 pyusb
 gTTS
 python-dotenv
+libusb1
