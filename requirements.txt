@@ -1,7 +1,7 @@
+libusb1
 requests
 playsound
 pynput
 pyusb
 gTTS
 python-dotenv
-libusb1
