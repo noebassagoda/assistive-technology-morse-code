@@ -17,6 +17,9 @@ The general idea of the project consists of 2 applications: a Python application
 - [Getting Started](#getting-started-)
   - [Previous Requirements](#previous-requirements)
   - [Installation](#installation)
+  - [Start the Server](#start-the-server)
+  - [Configure Email](#configure-email)
+  - [Accessibility Settings](#accessibility-settings)
 - [Demo](#demo-)
 - [Future Work](#future-work-)
 ## Motivation 💡
@@ -119,7 +122,7 @@ $npm start
 #### Configure Email
 You should configure the permissions and credentials of the email in order to make use of this functionality. First things first, you should enable third-party applications to send emails on your behalf since we will be sending emails from a python script. This step may not be necessary depending on the email service used, you can see in the following [video](https://youtu.be/6wWKa0hdd3M) how to do so.
 
-#### Accessibility settings
+#### Accessibility Settings
 If you are using mac OS Mojave or newer, there is a new security feature where applications must be explicitly allowed to trigger mouse / keyboard events (in our case, we want to fire keyboard events from the command line running the background process). To enable this, we must go to Security Preferences> Security and privacy> Privacy> Accessibility and choose from there to the command line application. Here's how to do it:
 
 <p align="center">
