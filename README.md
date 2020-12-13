@@ -123,7 +123,7 @@ $npm start
 You should configure the permissions and credentials of the email in order to make use of this functionality. First things first, you should enable third-party applications to send emails on your behalf since we will be sending emails from a python script. This step may not be necessary depending on the email service used, you can see in the following [video](https://youtu.be/6wWKa0hdd3M) how to do so.
 
 #### Accessibility Settings
-If you are using mac OS Mojave or newer, there is a new security feature where applications must be explicitly allowed to trigger mouse / keyboard events (in our case, we want to fire keyboard events from the command line running the background process). To enable this, we must go to Security Preferences> Security and privacy> Privacy> Accessibility and choose from there to the command line application. Here's how to do it:
+If you are using mac OS Mojave or newer, there is a new security feature where applications must be explicitly allowed to trigger mouse / keyboard events (in our case, we want to fire keyboard events from the command line running the background process). To enable this, we must go to `System Preferences > Security and Privacy > Privacy > Accessibility` and choose from there to the command line application. Here's how to do it:
 
 <p align="center">
 <img width="400" src="https://user-images.githubusercontent.com/27690774/101991545-2b088a00-3c8c-11eb-9eea-3c55d1ab5458.png">
