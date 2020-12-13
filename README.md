@@ -136,6 +136,7 @@ If you are using mac OS Mojave or newer, there is a new security feature where a
 ## Demo 🤩
 
 You can find the following demos:
+- [Mounting the device](https://youtu.be/QhvkTrgCdGw)
 - [TTS demo](https://youtu.be/asNYsBEba9g)
 - [Interactive Section](https://youtu.be/h3PfM4QIIcI)
 - [Send Emails](https://youtu.be/FOEAoWcf6ec)
