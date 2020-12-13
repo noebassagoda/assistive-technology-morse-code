@@ -1,4 +1,4 @@
-Assistive Technology Device Using Morse Code
+Assistive Technology Device - Morse Code
 ======
 _Created with ❤️ by [María Noel Bassagoda](https://github.com/nbassagoda)_  
 _It is recommended to check out the following [presentation](https://www.canva.com/design/DAEAsMVapFs/nRLMMbAQ4XeFwofrsamfEg/view?utm_content=DAEAsMVapFs&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton#1) to get a brief overview of what this project is about._
@@ -142,4 +142,5 @@ You can find the following demos:
 - [Configuration Section](https://youtu.be/JHPJrFPn3k0)
 
 ## Future work
-This project is very versatile and can be adapted to your own needs. In particular, the application is modulated enough to be able to connect it to any board or device you want to sense with. For this, the only thing that has to be changed is the way in which we recover the state of the button used to sense. You can handle this in the following file: `assistive-technology-morse-code/engine/util/buttons_helper.py`.
+This project is very versatile and can be adapted to your own needs. In particular, the application is modulated enough to be able to connect it to any board or device you want to sense with. For this, the only thing that has to be changed is the way in which we recover the state of the button used to sense. You can handle this in the following file:  
+`assistive-technology-morse-code/engine/util/buttons_helper.py`
